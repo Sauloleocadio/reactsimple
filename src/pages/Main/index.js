@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { FaGithubAlt, FaPlus } from 'react-icons/fa';
 import { Container, Form, SubmitButton } from './styles';
 
-import api from '../../services/api.js';
+import api from '../../services/api';
 
 export default class Main extends Component {
     state = {
@@ -31,7 +31,7 @@ export default class Main extends Component {
                     Repositórios
                 </h1>
 
-                <Form onClick={this.handleSubmit}>
+                <Form onSubmit={this.handleSubmit}>
                     <input
                         type="text"
                         placeholder="Adicionar repositório"
